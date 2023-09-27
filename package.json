@@ -1,0 +1,13 @@
+{
+  "name": "tsdemo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "ts46",
+    "ts52"
+  ],
+  "scripts": {
+    "test": "npm run testfast --workspaces && npm run testslow --workspaces"
+  }
+}
