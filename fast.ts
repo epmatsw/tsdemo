@@ -1,17 +1,11 @@
-import type { SpecificString, SmallerString } from "./bigstrings";
+import type { SpecificString } from "./bigstrings";
 
-const thing = {} as any as Record<SpecificString, string>;
-const isSpecificString = (key: string): key is SpecificString => {
-	return key in thing;
+const isSpecificString = (key: any): key is SpecificString => {
+  return true;
 };
 
-const fallback = function (
-	base: SpecificString | SmallerString,
-): SpecificString {
-
-	if (isSpecificString(base as any)) {
-		return base as SpecificString;
-	}
-
-  return base as any;
-};
+function test(base: SpecificString) {
+  if (isSpecificString(base as any)) {
+    return base;
+  }
+}
