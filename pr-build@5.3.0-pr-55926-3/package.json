@@ -1,0 +1,13 @@
+{
+  "name": "pr-build5.3.0-pr-55926-3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "npm:@typescript-deploys/pr-build@5.3.0-pr-55926-3"
+  },
+  "scripts": {
+    "testfast": "time tsc --noEmit -p ../tsconfigfast.json",
+    "testslow": "time tsc --noEmit -p ../tsconfigslow.json"
+  }
+}

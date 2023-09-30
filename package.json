@@ -5,7 +5,8 @@
   "license": "MIT",
   "workspaces": [
     "ts46",
-    "ts52"
+    "ts52",
+    "pr-build@5.3.0-pr-55926-3"
   ],
   "scripts": {
     "test": "npm run testfast --workspaces && npm run testslow --workspaces"
